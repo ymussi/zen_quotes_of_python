@@ -13,14 +13,16 @@ ns = api.namespace(
     '/', description='List Zen Quotes')
 
 @ns.route('/')
+@ns.route('/<int:number>')
 @ns.route('/<string:lang>')
+@ns.route('/<string:lang>/<int:number>')
 class List(Resource):
     @ns.response(code=400, description="Bad Request")
-    def get(self, lang=None):
+    def get(self, lang=None, number=None):
         """
         Lista todos as citações do Zen do Python em pt ou en.
         """
         q = Quotes()
-        res = q.get_quotes(lang)
+        res = q.get_quotes(lang, number)
 
         return res
