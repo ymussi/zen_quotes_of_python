@@ -12,7 +12,7 @@ def create_app():
         graphiql=True
     ))
 
-    # host = '0.0.0.0'
+    host = '0.0.0.0'
     # port = '8888'
     debug = True
     app.run(host, int(port), debug)
