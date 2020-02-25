@@ -3,6 +3,8 @@ from zen.api import api
 from flask import Flask, Blueprint
 from flask_cors import CORS
 
+from app import create_app
+
 app = Flask(__name__)
 blueprint = Blueprint('api', __name__)
 
@@ -11,6 +13,8 @@ api.add_namespace(quotes, '/')
 app.register_blueprint(blueprint)
 
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
+create_app()
 
 
 if __name__ == "__main__":
