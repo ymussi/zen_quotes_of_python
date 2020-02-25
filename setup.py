@@ -24,7 +24,7 @@ setup(
                         'flask==1.0.2',
                         'flask-restplus',
                         'configparser==3.5.0',
-                        'requests==2.18.4',
+                        'requests==2.20.0',
                         'flask_cors',
                         'flask_accepts==0.15.5',
                         'werkzeug==0.16.1',
