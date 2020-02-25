@@ -27,6 +27,8 @@ setup(
                         'requests==2.18.4',
                         'flask_cors',
                         'flask_accepts==0.15.5',
-                        'werkzeug==0.16.1'],
+                        'werkzeug==0.16.1',
+                        'Flask-GraphQL==2.0.1',
+                        'graphene==2.1.8'],
     zip_safe=False
     ),
