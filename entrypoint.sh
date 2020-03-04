@@ -2,4 +2,6 @@
 
 cd /app/zen
 
-gunicorn run:app --bind 0.0.0.0:5000 -w 4 --reload --access-logfile -
+# gunicorn run:app --bind 0.0.0.0:5000 -w 4 --reload --access-logfile -
+
+uwsgi --ini /app/zen/run.ini
