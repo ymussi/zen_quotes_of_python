@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-# read the contents of your README file
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
@@ -8,15 +7,22 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='zen_of_python',
-    # other arguments omitted
-    long_description=long_description,
-    long_description_content_type='text/markdown',
-    version = '0.0.1',
-    setup_requires=["setuptools-git-version"],
-    packages = find_packages(),
-    description='A list Zen of Python',
+    version = '1.1.3',
     author='Yuri Mussi',
     author_email='ymussi@gmail.com',
+    description='A list Zen of Python',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    packages=find_packages(),
+    setup_requires=["setuptools-git-version"],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+    py_modules='zen_of_python',
+    package_dir={'':'zen/quotes'},
     license='BSD',
     url='https://github.com/ymussi/zen_of_python',
     keywords = "Mussi",
