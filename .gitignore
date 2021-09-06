@@ -1,5 +1,7 @@
-zen_of_python.egg-info
+*.egg-info
 __pycache__
+dist
+build
 *.scannerwork
 *.eggs
 runtime.txt.example

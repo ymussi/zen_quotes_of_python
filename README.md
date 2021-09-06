@@ -6,6 +6,16 @@ A simple library that returns the Zen of Python quotes.
 
     pip install zen_quotes
 
+- Local instalation
+
+```
+git clone git@github.com:ymussi/zen_quotes_of_python.git
+
+cd zen_quotes_of_python/
+
+sh install.sh
+```
+
 - Usage
 ```
 # import lib 
