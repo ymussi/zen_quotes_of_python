@@ -17,4 +17,3 @@ class Quotes():
             resp = f'Unidentified language requested. Available languages are: {self.langs}.'
         
         return resp
-
